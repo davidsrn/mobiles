@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mx.itesm.sensors.VibrationScreen"
+    tools:context="com.example.davidsrn.lab3.VibrationScreen"
     tools:layout_editor_absoluteY="25dp">
 
     <Button

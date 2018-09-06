@@ -1,4 +1,4 @@
-package mx.itesm.sensors;
+package com.example.davidsrn.lab3;
 
 import android.content.Context;
 import android.content.Intent;
@@ -38,4 +38,3 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
-

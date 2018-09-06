@@ -1,4 +1,4 @@
-package mx.itesm.sensors;
+package com.example.davidsrn.lab3;
 
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -7,7 +7,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
 
 public class CloseUp extends AppCompatActivity {
 
@@ -27,13 +26,10 @@ public class CloseUp extends AppCompatActivity {
             public void onSensorChanged(SensorEvent sensorEvent) {
                 if(sensorEvent.values[0] < proximitySensor.getMaximumRange()) {
                     // Detected something nearby
-//                    ImageView iv = (ImageView)findViewById(CloseUp.this/);
-//                    iv.setImageResource(R.drawable.running);
+                    getWindow().getDecorView().setBackgroundColor(Color.RED);
                 } else {
-
                     // Nothing is nearby
-//                    ImageView iv = (ImageView)findViewById(v);
-//                    iv.setImageResource(R.drawable.walking);
+                    getWindow().getDecorView().setBackgroundColor(Color.GREEN);
                 }
             }
 
